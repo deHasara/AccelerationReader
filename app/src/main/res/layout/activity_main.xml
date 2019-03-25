@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:layout_editor_absoluteX="68dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="sensing"
+        android:text="Start"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp">
+
+        <TextView
+            android:id="@+id/xText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="58dp"
+            android:text="X:"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/xValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="151dp"
+            android:text="X:"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+        <TextView
+            android:id="@+id/yText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="122dp"
+            android:text="Y:"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/yValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="151dp"
+            android:layout_marginTop="122dp"
+            android:text="Y:"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <TextView
+            android:id="@+id/zText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="186dp"
+            android:text="Z:"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="102dp" />
+        <TextView
+            android:id="@+id/zValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z:"
+            android:layout_marginLeft="151dp"
+            android:layout_marginTop="186dp"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>
